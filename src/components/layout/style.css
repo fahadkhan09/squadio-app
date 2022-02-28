@@ -1,0 +1,14 @@
+.app-layout{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 100% !important;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+.selecting{
+    width: 20%;
+    font-size: 12px;
+    padding: 10px;
+}

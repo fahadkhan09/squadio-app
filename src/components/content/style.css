@@ -1,0 +1,185 @@
+@import '~leaflet/dist/leaflet.css';
+
+.layout{
+    display: flex;
+    justify-content: center;
+}
+.sidebar {
+    width: 200px;
+    height: 500px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    position: relative;
+}
+.heading {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    background: lightblue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+}
+.list-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.sidebar .list-item p{
+    margin: 0;
+    padding: 10px;
+}
+.sidebar .list-item .name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.name:hover{
+    background-color: rgb(205, 234, 243);
+    cursor: pointer;
+  
+}
+.action{
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+.countryList{
+    padding: 10px;
+    font-size: 12px;
+}
+.content-area{
+    width: 500px;
+    height: 500px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-item{
+    padding-left: 30px;
+    display: flex;
+    align-items: baseline;
+}
+.form-item > label {
+    width: 100px;
+}
+.content-footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.bottomBtn{
+    height: 40px;
+    width: 200px;
+    font-size: 12px;
+    bottom: 0;
+    cursor: pointer;
+    background-color: lightblue;
+    border: 1px solid lightgray;
+    position: absolute;
+    border-radius: 10px;
+}
+#mapid { height: 1000px; }
+
+p{
+    font-size: 12px;
+}
+.icon{
+    height: 11px;
+    margin-left: 20px;
+    padding: 5px;
+}
+.icon:hover{
+  
+    background-color: #67bbd7;
+    border-radius: 10px;
+}
+.buttonCancel{
+    height: 40px;
+    width: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.buttonUpdate{
+    height: 40px;
+    cursor: pointer;
+    width: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 1px solid lightgray;
+    background-color: lightblue;
+}
+.loader {
+    font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #61bdea;
+    background: -moz-linear-gradient(left, #61bdea 10%, rgba(97,189,234, 0) 42%);
+    background: -webkit-linear-gradient(left, #61bdea 10%, rgba(97,189,234, 0) 42%);
+    background: -o-linear-gradient(left, #61bdea 10%, rgba(97,189,234, 0) 42%);
+    background: -ms-linear-gradient(left, #61bdea 10%, rgba(97,189,234, 0) 42%);
+    background: linear-gradient(to right, #61bdea 10%, rgba(97,189,234, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .loader:before {
+    width: 50%;
+    height: 50%;
+    background: #61bdea;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+  .loader:after {
+    background: #ffffff;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @-webkit-keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
